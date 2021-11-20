@@ -32,6 +32,6 @@ Route::prefix('v1')->name('apiV1')->group(function () {
         Route::get('/banner', [AboutBannerController::class, 'getAboutBanner']);
     });
     Route::prefix('shop')->group(function () {
-
+        Route::get('/products', [ProductController::class, 'getProducts']);
     });
 });
